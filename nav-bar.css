@@ -20,6 +20,15 @@
   position: relative;
 }
 
+@keyframes spinBadge {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
 .nav .nav__badge {
   position: absolute;
   width: 18px;
@@ -33,6 +42,7 @@
   align-items: center;
   font-size: 10px;
   color: #fffcfa;
+  animation: spinBadge 2s linear infinite;
 }
 
 @keyframes showNavBar {
